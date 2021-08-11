@@ -27,7 +27,7 @@ $ npm install
 Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance. Make sure that you keep Ganache running throughout the migration / deployment process.
 
 
-## Step 4. Compile & Deploy Election Smart Contract
+## Step 4. Compile & Deploy Filestore Smart Contract
 `$ truffle migrate --reset`
 Each time you restart Ganache you must migrate the Filestore smart contract in order for the application to run.
 
@@ -38,7 +38,7 @@ See free video tutorial for full explanation of these steps:
 - Import an account provided by ganache.
 
 ## Step 6. Run the Front End Application
-`$ npm run dev`
+`$ npm start`
 Visit this URL in your browser: http://localhost:3000
 
 If you get stuck, please reference the free video tutorial.

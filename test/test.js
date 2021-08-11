@@ -39,9 +39,7 @@ contract('Filestore', ([deployer, uploader]) => {
       fileCount = await filestore.fileCount()
     })
 
-    //check event
     it('upload file', async () => {
-      // SUCESS
       assert.equal(fileCount, 1)
       const event = result.logs[0].args
       assert.equal(event.fileId.toNumber(), fileCount.toNumber(), 'Id is correct')
@@ -52,23 +50,18 @@ contract('Filestore', ([deployer, uploader]) => {
       assert.equal(event.fileDescription, fileDescription, 'Description is correct')
       assert.equal(event.uploader, uploader, 'Uploader is correct')
 
-      // FAILURE: File must have hash
+      
       await filestore.uploadFile('', fileSize, fileType, fileName, fileDescription, { from: uploader }).should.be.rejected;
-
-      // FAILURE: File must have size
+      
       await filestore.uploadFile(fileHash, '', fileType, fileName, fileDescription, { from: uploader }).should.be.rejected;
       
-      // FAILURE: File must have type
       await filestore.uploadFile(fileHash, fileSize, '', fileName, fileDescription, { from: uploader }).should.be.rejected;
 
-      // FAILURE: File must have name
       await filestore.uploadFile(fileHash, fileSize, fileType, '', fileDescription, { from: uploader }).should.be.rejected;
-
-      // FAILURE: File must have description
+      
       await filestore.uploadFile(fileHash, fileSize, fileType, fileName, '', { from: uploader }).should.be.rejected;
     })
 
-    //check from Struct
     it('lists file', async () => {
       const file = await filestore.files(fileCount)
       assert.equal(file.fileId.toNumber(), fileCount.toNumber(), 'id is correct')
