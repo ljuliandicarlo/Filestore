@@ -1,4 +1,4 @@
-# Filestore - Client side application that allows users to store and view their files on the Ethereum blockchain using IPFS. 
+# Filestore - Store your files on Ethereum with IPFS.
 Build your first decentralized application, or Dapp, on the Ethereum Network with this tutorial!
 
 Here is a diagram explaining how the application works:
