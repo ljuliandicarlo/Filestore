@@ -36,9 +36,9 @@ Import Ganache account to Metamask by following these steps:
 - 1337 for chain ID and then save.
 - Pick an account in Ganache and copy the private key. 
 - Go to import account in Metamask and paste the private key.
-- There should now be 100 test ETH in your account.  
+- There should now be 100 test Ether in your account.  
 
-Filestore smart contracts can also be deployed to the main or testnets by configuring the `truffle-config.js` file -- Ropsten test network is already included. From there you must modify the `.env` file to include an Infura (https://infura.io/) API key and the private key to your Metamask wallet. You can then get some test ETH from a variety of faucets for deployment.
+Filestore smart contracts can also be deployed to the main or testnets by configuring the `truffle-config.js` file - Ropsten test network is already included. From there you must modify the `.env` file to include an Infura (https://infura.io/) API key and the private key to your Metamask wallet. You can then get some test Ether from a variety of faucets for deployment.
 
 ## Step 6. Testing
 `$ truffle test`
