@@ -1,7 +1,7 @@
 # Filestore - Store your files on Ethereum with IPFS.
 Traditional file storage platforms utilize centralized servers and networks to store users files, furthermore granting them with the ability to gatekeep and censor your data. With the emergence of distributed-ledger technologies such as Ethereum and IPFS, developers now have the ability to build permissionless and trustless applications that are free of such issues.
 
-Filestore is a client-side application that allows users to store and view files on the Ethereum blockchain using the IPFS protocol and a web3 wallet. 
+Filestore is a client-side application that allows users to store files on the Ethereum blockchain using the IPFS protocol and a web3 wallet.
 
 ## Dependencies
 Install the following prerequisites: 
