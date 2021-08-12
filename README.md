@@ -1,7 +1,7 @@
 # Filestore - Store your files on Ethereum with IPFS.
 Traditional file storage platforms utilize centralized servers and networks to store users files, furthermore granting them with the ability to gatekeep and censor data. With the emergence of distributed-ledger technologies such as Ethereum and IPFS, developers now have the ability to build permissionless and trustless applications that are free of such limitations.
 
-Filestore is a client-side application that allows users to store files on the Ethereum blockchain using the IPFS protocol and a web3 wallet. The purpose of this application is not necessarily the utility, but rather to serve as a starting point and template for building dapps that store any sort of data on Ethereum and IPFS.
+Filestore is a client-side application that allows users to store files on the Ethereum blockchain using the IPFS protocol and a web3 wallet. The purpose of this application is not necessarily the utility, but rather to serve as a starting point and template for building client facing dApps that store any sort of data on Ethereum and IPFS.
 
 ## Dependencies
 Install the following prerequisites: 
@@ -28,10 +28,15 @@ Open the Ganache GUI client that you downloaded and installed. This will start y
 Each time you restart Ganache you must migrate the Filestore smart contract in order for the application to run.
 
 ## Step 5. Configure Metamask
-See free video tutorial for full explanation of these steps:
-- Unlock Metamask
-- Connect metamask to your local Etherum blockchain provided by Ganache.
-- Import an account provided by ganache.
+Import Ganache account to Metamask by following these steps:
+- Unlock Metamask.
+- Go tocustom RPC.
+- Give the network a name.
+- Input `HTTP://127.0.0.1:7545` into the RPC URL.
+- 1337 for chain ID and save.
+- Pick an account in Ganache and copy the private key. 
+- Go to import account in Metamask and paste the private key.
+- There should now be 100 test ETH in your account.  
 
 ## Step 6. Testing
 `$ truffle test`
