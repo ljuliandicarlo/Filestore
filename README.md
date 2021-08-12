@@ -30,10 +30,10 @@ Each time you restart Ganache you must migrate the Filestore smart contract in o
 ## Step 5. Configure Metamask
 Import Ganache account to Metamask by following these steps:
 - Unlock Metamask.
-- Go tocustom RPC.
+- Go to networks and then custom RPC.
 - Give the network a name.
-- Input `HTTP://127.0.0.1:7545` into the RPC URL.
-- 1337 for chain ID and save.
+- Input `HTTP://127.0.0.1:7545` for the RPC URL.
+- 1337 for chain ID and then save.
 - Pick an account in Ganache and copy the private key. 
 - Go to import account in Metamask and paste the private key.
 - There should now be 100 test ETH in your account.  
